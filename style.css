@@ -1,10 +1,10 @@
 .cube-container {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   perspective: 800px;
   margin: 30px auto;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -23,15 +23,14 @@ body {
 
 .face {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   color: rgb(214, 21, 21);
   font-size: 18px;
   text-align: center;
   line-height: ;
   background: transparent;
   opacity: 0.9;
-  border: 2px solid;
   border-image: linear-gradient(
       to right,
       #ff6b6b,
@@ -82,9 +81,10 @@ body {
   }
 }
 .image {
-  width: 300px;
+  width: 150px;
   object-fit: cover;
-  height: 300px;
+  height: 150px;
+  border-radius: 10px;
 }
 .tab1 {
   background-image: url(h2.jpg);
@@ -93,9 +93,10 @@ body {
 }
 .heart {
   color: red;
-  font-size: 450px;
+  font-size: 300px;
   animation: heartbeat 10s ease-in-out infinite;
   position: relative;
+  margin-top: -50px;
 }
 
 @keyframes heartbeat {
